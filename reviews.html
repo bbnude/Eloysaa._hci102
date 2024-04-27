@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Reviews | HCI-102</title>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins:wght@400;500;600&display=swap");
+        /* :root {
+            --primary-color: #1a2c50;
+            --secondary-color: #f4f7fe;
+            --text-dark: #333333;
+            --text-light: #767268;
+            --extra-light: #ffffff;
+        } */
+        
+        .section__container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 2rem;
+        }
+        
+        .header p {
+            letter-spacing: 2px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .header h1 {
+            font-family: "Noto Serif", serif;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        
+        .testimonials__grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            padding: 2rem;
+            display: grid;
+            gap: 1rem;
+            background-color: var(--extra-light);
+            border-radius: 5px;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        
+        .card i {
+            font-size: 2.5rem;
+            color: gold;
+        }
+        
+        .card p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .card hr {
+            width: 40px;
+            margin: auto;
+            color: var(--text-light);
+        }
+        
+        .card img {
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            border-radius: 100%;
+            border: 1px solid var(--primary-color);
+        }
+        
+        .card .name {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-light);
+            transition: 0.3s;
+        }
+        
+        .card .name:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer h4 {
+            font-family: "Noto Serif", serif;
+            font-size: 1.25rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        
+        .footer p {
+            max-width: 450px;
+            margin: auto;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer button {
+            text-decoration: underline;
+            padding: 1rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--extra-light);
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 46%;
+        }
+        
+        @media (width < 900px) {
+            .testimonials__grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+        
+        @media (width < 600px) {
+            .testimonials__grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .footer button {
+                text-decoration: underline;
+                padding: 1rem 2rem;
+                outline: none;
+                border: none;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--extra-light);
+                background-color: var(--primary-color);
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 38%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#">
+                <h1 class="logo">Eloysaa.</h1>
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+
+
+                    <li>
+                        <a href="./index.html" class="navbar-link">Home</a>
+                    </li>
+
+
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="navbar-link">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Contact Us</a>
+                    </li> -->
+
+                </ul>
+
+                <!-- <a href="#" class="btn btn-secondary">Booking Now</a> -->
+
+            </nav>
+
+        </div>
+    </header>
+    <div class="section__container">
+        <div class="header">
+            <!-- <p style="color: white;">R E V I E W S</p> -->
+            <h1 style="color: white;">R E V I E W S</h1>
+        </div>
+        <div class="testimonials__grid">
+            <div class="card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p>
+                    I've been working with these guys for a long time and I can say that my house is in the perfect hands.
+                </p>
+                <hr />
+                <img src="./assets/images/1 (6).jpg" alt="user" />
+                <p class="name">Allan Collins</p>
+            </div>
+            <div class="card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p>
+                    Working with Sentry Oak is just great, every problem in my house is solved in a matter of days.
+                </p>
+                <hr />
+                <img src="./assets/images/1 (7).jpg" alt="user" />
+                <p class="name">Clay Washington</p>
+            </div>
+            <div class="card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p>
+                    Once a pipe burst in my kitchen and an hour later it was already repaired, thanks to Sentry Oak.
+                </p>
+                <hr />
+                <img src="./assets/images/1 (4).jpg" alt="user" />
+                <p class="name">Tanya Grant</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>No two homes are alike!</h4>
+            <p>
+                Our Elite network, combined with your personal needs, allows us to create a home plan specifically tailored to you.
+            </p>
+            <button>GET A QUOTE</button>
+        </div>
+    </div>
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+- ionicon link
+-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
